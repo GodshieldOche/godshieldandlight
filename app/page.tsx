@@ -80,7 +80,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-purple-50 to-white">
       <Head>
-        <title>Godshield & Light's Wedding | RSVP</title>
+        <title>Godshield & Light&apos;s Wedding | RSVP</title>
         <meta name="description" content="Wedding RSVP page" />
         <link rel="icon" href="/favicon.ico" />
         {/* Import elegant Google Fonts */}
@@ -112,7 +112,7 @@ export default function Home() {
               className="text-2xl mt-4 font-light"
               style={{ fontFamily: "'Cormorant Garamond', serif" }}
             >
-              We're getting married!
+              We&apos;re getting married!
             </p>
           </div>
         </div>
@@ -372,8 +372,8 @@ export default function Home() {
                 fontSize: "1.1rem",
               }}
             >
-              Your RSVP has been submitted. We're looking forward to celebrating
-              with you!
+              Your RSVP has been submitted. We&apos;re looking forward to
+              celebrating with you!
             </p>
             <button
               onClick={() => setSubmitted(false)}
