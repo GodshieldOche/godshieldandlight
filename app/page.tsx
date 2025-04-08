@@ -69,7 +69,7 @@ export default function Home() {
       setSubmitted(true);
       setFormData({
         fullName: "",
-        attending: true,
+        attending: false,
         guestCount: 0,
         message: "",
         phone: "",
@@ -100,16 +100,16 @@ export default function Home() {
         className="w-full bg-cover bg-center h-96 relative"
         style={{ backgroundImage: "url('/wedding-background.jpg')" }}
       >
-        <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
+        <div className="absolute inset-0 bg-black/50 flex items-center justify-center px-5">
           <div className="text-center text-white">
             <h1
-              className="text-6xl mb-2"
+              className="text-6xl mb-6"
               style={{ fontFamily: "'Great Vibes', cursive" }}
             >
               Godshield & Light
             </h1>
             <p
-              className="text-2xl mt-4 font-light"
+              className="text-2xl font-light"
               style={{ fontFamily: "'Cormorant Garamond', serif" }}
             >
               We&apos;re getting married!
@@ -422,6 +422,59 @@ export default function Home() {
               </p>
             </div>
           </div>
+        </div>
+
+        <div className="mt-16">
+          <h2
+            className="text-2xl text-purple-800 mb-4 text-center"
+            style={{ fontFamily: "'Playfair Display', serif" }}
+          >
+            Wishlist & Gift Preferences
+          </h2>
+
+          <p
+            className="text-center text-gray-700 mb-8 max-w-2xl mx-auto"
+            style={{
+              fontFamily: "'Cormorant Garamond', serif",
+              fontSize: "1.1rem",
+            }}
+          >
+            Your presence is the greatest gift we could ask for! However, if you
+            feel inclined to bless us further, our preferred gift is a{" "}
+            <strong>cash gift</strong> 💖. For those who prefer to gift items,
+            here are some ideas:
+          </p>
+
+          <ul className="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-4xl mx-auto text-gray-700">
+            {[
+              "Washing Machine",
+              "Dinner set",
+              "Non-stick cookware set",
+              "Duvet & bedsheets",
+              "Home décor items",
+              "Vacuum cleaner",
+              "Air fryer",
+              "Toaster",
+              "Blender",
+              "Pressure Cooker",
+              "Juicer",
+              "Wine Glass Set",
+              "Humidifier",
+              "Kitchen Knife Set",
+              "Basic Toolkit",
+              "Table Spoons Forks",
+              "1.5hp Air Conditioner",
+              "SoundBar Bluetooth Speaker",
+            ].map((item, i) => (
+              <li
+                key={i}
+                className="bg-purple-50 border border-purple-200 rounded-lg px-6 py-4 shadow-sm"
+                style={{ fontFamily: "'Montserrat', sans-serif" }}
+              >
+                {item}
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
 
