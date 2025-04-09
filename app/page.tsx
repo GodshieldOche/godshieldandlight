@@ -424,6 +424,35 @@ export default function Home() {
           </div>
         </div>
 
+        <div className="mt-16 text-center">
+          <h3
+            className="text-2xl text-purple-800 mb-4"
+            style={{ fontFamily: "'Playfair Display', serif" }}
+          >
+            Account Information
+          </h3>
+          <div className="bg-purple-50 rounded-xl p-6 text-center shadow-inner">
+            <p
+              className="text-purple-900 text-xl font-semibold mb-2"
+              style={{ fontFamily: "'Cormorant Garamond', serif" }}
+            >
+              Bank Name: GT Bank
+            </p>
+            <p
+              className="text-purple-900 text-xl font-semibold mb-2"
+              style={{ fontFamily: "'Cormorant Garamond', serif" }}
+            >
+              Account Number: 0459818376
+            </p>
+            <p
+              className="text-purple-900 text-xl font-semibold"
+              style={{ fontFamily: "'Cormorant Garamond', serif" }}
+            >
+              Account Name: Godshield Oche Godshield
+            </p>
+          </div>
+        </div>
+
         <div className="mt-16">
           <h2
             className="text-2xl text-purple-800 mb-4 text-center"
@@ -447,7 +476,8 @@ export default function Home() {
 
           <ul className="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-4xl mx-auto text-gray-700">
             {[
-              "Washing Machine",
+              "Automatic Washing Machine",
+              "1.5hp Air Conditioner",
               "Dinner set",
               "Non-stick cookware set",
               "Duvet & bedsheets",
@@ -463,7 +493,6 @@ export default function Home() {
               "Kitchen Knife Set",
               "Basic Toolkit",
               "Table Spoons Forks",
-              "1.5hp Air Conditioner",
               "SoundBar Bluetooth Speaker",
             ].map((item, i) => (
               <li
